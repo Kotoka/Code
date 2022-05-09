@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        img{
-            width: 500px;
-        border-radius: 50px;
-        
-        }
+        label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+
     </style>
 </head>
 <body>
-    <img src="images/GG.jpg" alt="Food ">
-<h1>INTRODUCTION TO FOOD</h1>
-<button onclick="variety()"><em>Food</em></button>
-<p id="food-el"></p>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </div>
     
-    <script src="index.js"></script>
+    <div>
+        <label for="pass">Password (8 characters minimum):</label>
+        <input type="password" id="pass" name="password"
+               minlength="8" required>
+    </div>
+    
+    <input type="submit" value="Sign in">
+    
 </body>
 </html>
